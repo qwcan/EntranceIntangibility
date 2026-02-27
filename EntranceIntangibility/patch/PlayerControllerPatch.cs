@@ -16,7 +16,7 @@ public class PlayerControllerPatch
     {
         if (Plugin.Instance.IsIntangible((int)__instance.playerClientId))
         {
-            Plugin.Log.LogInfo( $"Player {__instance.playerClientId} is intangible, ignoring damage");
+            //Plugin.Log.LogInfo( $"Player {__instance.playerClientId} is intangible, ignoring damage");
             return false;
         }
 
@@ -29,7 +29,7 @@ public class PlayerControllerPatch
     {
         if( Plugin.Instance.IsIntangible( (int)__instance.playerClientId ) )
         {
-            Plugin.Log.LogInfo( $"Player {__instance.playerClientId} is intangible, ignoring damage");
+            //Plugin.Log.LogInfo( $"Player {__instance.playerClientId} is intangible, ignoring damage");
             __result = false;
         }
     }

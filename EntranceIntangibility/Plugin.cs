@@ -52,8 +52,8 @@ public class Plugin : BaseUnityPlugin
 
         bool intangible = DateTimeOffset.Now.ToUnixTimeMilliseconds() - value  <
                           Config.IntangibilityDuration.Value * 1000;
-        Log.LogInfo($"{value} vs {DateTimeOffset.Now.ToUnixTimeMilliseconds()} ( diff = {DateTimeOffset.Now.ToUnixTimeMilliseconds() - value } ) {Config.IntangibilityDuration.Value}");
-        Log.LogInfo($"Player {playerObj} is {(intangible ? "intangible" : "not intangible")}");
+        //Log.LogInfo($"{value} vs {DateTimeOffset.Now.ToUnixTimeMilliseconds()} ( diff = {DateTimeOffset.Now.ToUnixTimeMilliseconds() - value } ) {Config.IntangibilityDuration.Value}");
+        //Log.LogInfo($"Player {playerObj} is {(intangible ? "intangible" : "not intangible")}");
         return intangible;
     }
 

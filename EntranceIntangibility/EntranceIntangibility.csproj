@@ -8,6 +8,11 @@
         <Product>EntranceIntagibility</Product>
     </PropertyGroup>
 
+    <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+        <DebugSymbols>true</DebugSymbols>
+        <DebugType>embedded</DebugType>
+    </PropertyGroup>
+    
     <ItemGroup>
         <Reference Include="0Harmony">
             <HintPath>..\..\..\AppData\Roaming\r2modmanPlus-local\LethalCompany\profiles\v73\BepInEx\core\0Harmony.dll</HintPath>
