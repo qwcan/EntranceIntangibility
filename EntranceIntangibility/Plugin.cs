@@ -65,6 +65,7 @@ public class Plugin : BaseUnityPlugin
         _harmony.PatchAll(typeof(EnemyAIPatch));
         _harmony.PatchAll(typeof(PlayerControllerPatch));
         _harmony.PatchAll(typeof(EntranceTeleportPatch));
+        _harmony.PatchAll(typeof(ShipTeleporterPatch));
         _harmony.PatchAll(typeof(NetworkPatch));
 
         
