@@ -9,7 +9,7 @@ using HarmonyLib;
 
 namespace EntranceIntangibility;
 
-[BepInPlugin(GUID, "EntranceIntangibility", "1.0.1")]
+[BepInPlugin(GUID, "EntranceIntangibility", "1.1.0")]
 [BepInDependency("com.sigurd.csync", "5.0.1")] 
 public class Plugin : BaseUnityPlugin
 {
