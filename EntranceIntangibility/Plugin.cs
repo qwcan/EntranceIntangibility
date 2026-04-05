@@ -9,7 +9,7 @@ using HarmonyLib;
 
 namespace EntranceIntangibility;
 
-[BepInPlugin(GUID, "EntranceIntangibility", "1.1.0")]
+[BepInPlugin(GUID, "EntranceIntangibility", "1.2.0")]
 [BepInDependency("com.sigurd.csync", "5.0.1")] 
 public class Plugin : BaseUnityPlugin
 {
@@ -66,6 +66,7 @@ public class Plugin : BaseUnityPlugin
         _harmony.PatchAll(typeof(PlayerControllerPatch));
         _harmony.PatchAll(typeof(EntranceTeleportPatch));
         _harmony.PatchAll(typeof(ShipTeleporterPatch));
+        _harmony.PatchAll(typeof(NutcrackerAIPatch));
         _harmony.PatchAll(typeof(NetworkPatch));
 
         

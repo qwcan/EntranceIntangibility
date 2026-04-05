@@ -1,0 +1,10 @@
+{
+    "name": "EntranceIntangibility",
+    "version_number": "1.2.0",
+    "website_url": "https://github.com/qwcan/EntranceIntangibility",
+    "description": "Gives players a configurable safety period after entering or leaving the facility.",
+    "dependencies": [
+		"BepInEx-BepInExPack-5.4.2100",
+		"Sigurd-CSync-5.0.1"
+	]
+}

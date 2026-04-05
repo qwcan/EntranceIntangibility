@@ -17,6 +17,7 @@ public class EnemyAIPatch
     {
         if (Plugin.Instance.IsIntangible((int)playerScript.playerClientId))
         {
+            //Plugin.Log.LogInfo( $"Player {playerScript.playerClientId} is intangible, ignoring targetable");
             __result = false;
         }
     }
@@ -43,6 +44,7 @@ public class EnemyAIPatch
     {
         if (__result && Plugin.Instance.IsIntangible((int)__result.playerClientId))
         {
+            //Plugin.Log.LogInfo( $"Player {__result.playerClientId} is intangible, ignoring LOS");
             __result = null;
         }
     }
@@ -56,6 +58,7 @@ public class EnemyAIPatch
     {
         if (__result && Plugin.Instance.IsIntangible((int)__result.playerClientId))
         {
+            //Plugin.Log.LogInfo( $"Player {__result.playerClientId} is intangible, ignoring LOS (closest)");
             __result = null;
         }
 
